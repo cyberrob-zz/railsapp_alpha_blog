@@ -1,0 +1,59 @@
+<DOCTYPE <!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                About
+            </title>
+            <style>
+                body {background-color:lightgrey;}
+                h1   {
+                color:darkgrey;
+                font-family: verdana;
+                font-size: 300%;
+                text-align: center;
+                }
+                
+                table {
+                width: 100%;
+                }
+                td {
+                /*border: 1px solid black;*/
+                text-align: center;
+                padding: 5px;
+                }
+                a {
+                font-size: 130%;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>
+                This is About Page
+            </h1>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <%= link_to image_tag('girl.jpg', :style=>
+                            "width:75%;height:60%"),  'https://www.facebook.com/kyoza30?fref=ts'  %>
+                        <p>Courtesy of <a href="https://www.facebook.com/kyoza30">陳紀東</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestias totam incidunt harum eius cum dicta quisquam ad cumque, quia provident a sit! Repudiandae accusantium delectus libero velit amet at!</p>
+                    		<p>Mollitia modi eum, esse numquam illum impedit ducimus, ad voluptas ullam dolorem, quia dolores, similique. Reprehenderit iure harum sit odio repellendus. Quam iste labore, quod sunt eos inventore repudiandae similique?</p>
+                    	</td>
+                    	<td>
+                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rerum illo aliquam exercitationem aut ratione nisi? Non, quisquam aperiam ea totam magni laboriosam, libero nulla veniam similique et, fugiat adipisci.</p>
+                    		<p>Quisquam facilis vero perspiciatis sint voluptatum aperiam eveniet soluta? Nobis tenetur, at autem, delectus dolore vitae impedit distinctio, mollitia dolores accusamus quae praesentium. Sed sequi nam, ab mollitia odio, numquam!</p>
+                    	</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <%= link_to 'home', root_path %>
+                            </td>
+                        </tr>
+                    </table>
+                    <h4 style="text-align: center;font-family: courier">All rights reserved 2016</h4>
+                </body>
+            </html>
