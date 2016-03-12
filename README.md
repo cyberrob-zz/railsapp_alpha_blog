@@ -1,4 +1,4 @@
-== README
+# README
 
 This is a sample app created while following [Rails course](https://www.udemy.com/the-complete-ruby-on-rails-developer-course/) `section 3`. 
 
