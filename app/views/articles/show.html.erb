@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Post Content</title>
+	<style>
+		body {
+			text-align: center;
+			font-family: courier
+		}
+	</style>
+</head>
+<body>
+	<h2>
+		<%= @article.title %>
+	</h2>
+	<p>
+		<%= @article.description %>
+	</p>
+
+	<%= link_to 'All Posts', articles_path %>
+</body>
+</html>
