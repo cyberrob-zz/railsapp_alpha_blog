@@ -10,27 +10,34 @@
                 true %>
                 <%= csrf_meta_tags %>
                     <style>
-                        
-						html { 
-							font-size:100%;
-							text-align: center;
-                        	/*font-family: courier*/
-                        	font-family: 'cwTeXHei', serif;
-						}
-
-						@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
-                        
-                    </style>
-                </head>
-                <body>
-                    <% flash.each do |name, msg| %>
-                        <ul>
-                            <li>
-                                <%= msg %>
-                                </li>
-                            </ul>
-                            >
-                            <% end %>
-                                <%= yield %>
-                                </body>
-                            </html>
+                        html {
+                        font-size:100%;
+                        text-align: center;
+                        /*font-family: courier*/
+                        font-family: 'cwTeXHei', serif;
+                        }
+                        @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+                        button, input, select, textarea {
+                        font-family : inherit;
+                        font-size   : 100%;
+                        width : 75%;
+                        margin: 0;
+                        -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+                        -moz-box-sizing: border-box; /* For legacy (Firefox
+                        <29) Gecko based browsers */
+                            box-sizing: border-box;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <% flash.each do |name, msg| %>
+                            <ul>
+                                <li>
+                                    <%= msg %>
+                                    </li>
+                                </ul>
+                                >
+                                <% end %>
+                                    <%= yield %>
+                                    </body>
+                                </html>

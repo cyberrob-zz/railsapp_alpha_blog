@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Post Article</title>
-	
+	<title>Edit Post</title>
 </head>
 <body>
-	<h1>How about write something about today?</h1>
-	
+	<h1>Edit your post <%= link_to 'or not', article_path %></h1>
 	<% if @article.errors.any? %>
 	<h3>Something wrong:</h3>
 	<ul>
@@ -20,7 +18,7 @@
 	<%= form_for @article do |post| %>
 		<p><%= post.text_field :title, placeholder: "Title" %></p>
 		<p><%= post.text_area :description, size: "60x30", placeholder: "description" %></p>
-		<%= post.submit "Create"%>
+		<%= post.submit "Save"%>
 	<% end %>
 </body>
 </html>
