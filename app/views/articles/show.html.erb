@@ -3,12 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Post Content</title>
-	<style>
-		body {
-			text-align: center;
-			font-family: courier
-		}
-	</style>
+	
 </head>
 <body>
 	<h2>
@@ -18,6 +13,7 @@
 		<%= @article.description %>
 	</p>
 
+	<%= link_to 'Create New Post', new_article_path %>
 	<%= link_to 'All Posts', articles_path %>
 </body>
 </html>

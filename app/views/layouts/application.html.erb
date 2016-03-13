@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>AlphaBlog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<% flash.each do |name, msg| %>
-	<ul>
-		<li><%= msg %></li>
-	</ul>>
-<% end %>
-<%= yield %>
+    <head>
+        <title>
+            AlphaBlog
+        </title>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' =>
+            true %>
+            <%= javascript_include_tag 'application', 'data-turbolinks-track' =>
+                true %>
+                <%= csrf_meta_tags %>
+                    <style>
+                        
+						html { 
+							font-size:100%;
+							text-align: center;
+                        	/*font-family: courier*/
+                        	font-family: 'cwTeXHei', serif;
+						}
 
-</body>
-</html>
+						@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+                        
+                    </style>
+                </head>
+                <body>
+                    <% flash.each do |name, msg| %>
+                        <ul>
+                            <li>
+                                <%= msg %>
+                                </li>
+                            </ul>
+                            >
+                            <% end %>
+                                <%= yield %>
+                                </body>
+                            </html>
