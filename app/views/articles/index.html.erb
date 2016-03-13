@@ -10,7 +10,6 @@
 		width: 100%;
 		}
 		td {
-		/*border: 1px solid black;*/
 		text-align: center;
 		padding: 5px;
 		}
@@ -21,20 +20,23 @@
 	</head>
 	<body>
 		<h1>
-		List All Articles or simply <%= link_to "Create new article", new_article_path  %>
+		List All Articles
 		</h1>
+		<h3>or simply <%= link_to "Create new article", new_article_path  %></h3>
 		<% if @articles.length > 0 %>
 		<table>
 			<%= @articles.each do |article| %>
 			<tr>
 				<td>
-					<%= link_to article.title, article_path(article.id) %>
+					<%= link_to article.title, article_path(article) %>
+					<p><%= article.updated_at %></p>
 				</td>
+				
 			</tr>
 			<% end %>
 		</table>
 		<% else %>
-			<h3><%= link_to "Post your first post!", new_article_path %></h3>
+		<h3><%= link_to "Post your first post!", new_article_path %></h3>
 		<% end %>
 	</body>
 </html>
