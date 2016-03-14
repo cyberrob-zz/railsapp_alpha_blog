@@ -23,9 +23,12 @@
 		List All Articles
 		</h1>
 		<h3>or simply <%= link_to "Create new article", new_article_path  %></h3>
+		<br>
+		<br>
+		<br>
 		<% if @articles.length > 0 %>
 		<table>
-			<%= @articles.each do |article| %>
+			<% @articles.each do |article| %>
 			<tr>
 				<td>
 					<%= link_to article.title, article_path(article) %>

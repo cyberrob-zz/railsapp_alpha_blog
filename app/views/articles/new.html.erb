@@ -2,25 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Post Article</title>
+		<title>Create Article</title>
 		
 	</head>
 	<body>
 		<h1>Something new today? or <%= link_to 'see all posts', articles_path %></h1>
-		
-		<% if @article.errors.any? %>
-		<h3>Something went wrong:</h3>
-		<ul>
-			<% @article.errors.full_messages.each do |msg| %>
-			<li><%= msg %></li>
-			<% end %>
-		</ul>
-		<% end %>
-
-		<%= form_for @article do |post| %>
-		<p><%= post.text_field :title, placeholder: "Title" %></p>
-		<p><%= post.text_area :description, size: "60x30", placeholder: "description" %></p>
-		<%= post.submit "Create"%>
-		<% end %>
+		<%= render "form" %>
 	</body>
 </html>
