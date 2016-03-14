@@ -9,7 +9,7 @@
 	<% if @article.errors.any? %>
 	<h3>Something wrong:</h3>
 	<ul>
-		<%= @article.errors.full_messages.each do |msg| %>
+		<% @article.errors.full_messages.each do |msg| %>
 			<li><%= msg %></li>
 		<% end %>
 	</ul>
