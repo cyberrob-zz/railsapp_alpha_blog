@@ -1,66 +1,21 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Alpha Blog
-        </title>
-        
-    </head>
-    <body>
-        <h1>
-            Alpha Blog
-        </h1>
-        <table>
-            <tr>
-                <td style="text-align: right;">
-                    <h2>
-                        It's a blog
-                    </h2>
-                </td>
-                <td style="text-align: left;">
-                    <h3>
-                        in alpha stage but not just a idea.
-                    </h3>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <a href="https://www.flickr.com/photos/buzz_rozwell/23880451172/">
-                        <img src="https://c2.staticflickr.com/6/5688/23880451172_4c22f4b9fe_c.jpg" alt="image on flicker" />
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td style="padding: 10px">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione voluptatum distinctio corporis doloribus est accusamus nesciunt, tenetur consequuntur quas deleniti in delectus nihil earum sapiente totam. Sit fugiat, quos perspiciatis.
-                    </p>
-                    <p>
-                        Cupiditate, asperiores iste vel molestiae, soluta vitae ratione illo tenetur, et qui, obcaecati rerum. Adipisci qui fugit eligendi consequuntur, veniam minus numquam, dolores non consequatur. Voluptatibus fugit accusamus necessitatibus, deserunt.
-                    </p>
-                </td>
-                <td style="padding: 10px">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi beatae, molestias, voluptatibus facere eos modi, incidunt illum doloremque voluptas natus porro. Itaque vero, quia illo. Natus iure pariatur officia veniam!
-                    </p>
-                    <p>
-                        Incidunt, vel! Mollitia, voluptatum! Assumenda consequuntur consectetur sapiente consequatur alias, magnam, ipsum voluptate nostrum id voluptatum. Voluptatibus nulla facilis impedit eveniet id illum iste cumque architecto laudantium quasi aut, porro.
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <%= link_to 'about', about_path %>
-                    </td>
-                    <td>
-                        <%= link_to 'all posts', articles_path %>
-                        </td>
-                    </tr>
-                </table>
-                <br/>
-                <br/>
-                <h4 style="text-align: center;font-family: courier">
-                    All rights reserved 2016
-                </h4>
-            </body>
-        </html>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Hello, start writing now!</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem at iure, corporis, deleniti reprehenderit labore, aut ad architecto perferendis officia expedita consectetur doloremque et cupiditate consequatur, aliquid eveniet quaerat. Adipisci.
+        </p>
+        <br>
+        <p>
+        <%= link_to "TRY IT", new_article_path, class: "btn btn-default btn-lg", role: "button" %>
+        </p>
+    </div>
+    <!-- <div class="col-lg-6">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia adipisci alias ad cupiditate. Reiciendis aliquid ipsam eligendi provident temporibus, quae, blanditiis quia assumenda? Nobis odio aspernatur ducimus dicta quidem eligendi?
+    </div>
+    <div class="col-lg-6">
+        <a href="https://www.flickr.com/photos/buzz_rozwell/23880451172/">
+            <img src="https://c2.staticflickr.com/6/5688/23880451172_4c22f4b9fe_c.jpg" alt="image on flicker"
+            style="width: 50%; height: 50%">
+        </a>
+    </div> -->
+</div>

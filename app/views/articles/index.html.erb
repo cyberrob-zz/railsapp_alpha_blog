@@ -1,45 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8"/>
-		<title>
-		List All Articles
-		</title>
-		<style>
-		table {
-		width: 100%;
-		}
-		td {
-		text-align: center;
-		padding: 5px;
-		}
-		a {
-		font-size: 130%;
-		}
-		</style>
-	</head>
-	<body>
-		<h1>
-		List All Articles
-		</h1>
-		<h3>or simply <%= link_to "Create new article", new_article_path  %></h3>
-		<br>
-		<br>
-		<br>
-		<% if @articles.length > 0 %>
-		<table>
-			<% @articles.each do |article| %>
-			<tr>
-				<td>
-					<%= link_to article.title, article_path(article) %>
-					<p><%= article.updated_at %></p>
-				</td>
-				
-			</tr>
-			<% end %>
-		</table>
-		<% else %>
-		<h3><%= link_to "Post your first post!", new_article_path %></h3>
-		<% end %>
-	</body>
-</html>
+<h1>
+List All Articles
+</h1>
+<h3>
+or simply
+<%= link_to "Create new article", new_article_path  %>
+</h3>
+<br/>
+<br/>
+<br/>
+<% if @articles.length >
+0 %>
+<table>
+	<% @articles.each do |article| %>
+	<tr>
+		<td>
+			<h3><%= link_to article.title, article_path(article) %></h3>
+			<p>
+				<%= article.updated_at %>
+			</p>
+		</td>
+	</tr>
+	<% end %>
+</table>
+<% else %>
+<h3>
+<%= link_to "Post your first post!", new_article_path %>
+</h3>
+<% end %>

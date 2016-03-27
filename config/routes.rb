@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   root 'pages#home'
   get 'about' => 'pages#about'
+  get 'contact' => 'pages#contact'
 
   resources :articles
   # Example of regular route:

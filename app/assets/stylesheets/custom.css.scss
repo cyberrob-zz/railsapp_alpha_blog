@@ -1,0 +1,70 @@
+
+
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+html {
+    font-size: 100%;
+    text-align: center;
+    font-family: 'cwTeXHei', serif;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    width: 75%;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box;
+    /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+}
+
+#logo {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1.8em;
+	color: #5c5c5c;
+}
+
+#logo.hover {
+	font-weight: bold;
+}
+
+.jumbotron {
+    background: transparent;
+    background-image:url('https://c2.staticflickr.com/6/5688/23880451172_4c22f4b9fe_c.jpg');
+    background-repeat:no-repeat;
+    background-size: 100%;    
+}
+
+.jumbotron h1 {
+    letter-spacing: -2px;
+    text-shadow: #6C6C6C 0.1em 0.1em 0.1em;
+    color: white;
+}
+
+.jumbotron p {
+    text-shadow: #E0E0E0 0.1em 0.1em 0.1em;
+    color: white;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+footer {
+    margin-top: 45px;
+    padding-top: 15px;
+    /*border-top: 1px solid #eaeaea;*/
+
+}
