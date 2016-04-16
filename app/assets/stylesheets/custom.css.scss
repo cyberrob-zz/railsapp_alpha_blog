@@ -1,4 +1,4 @@
-
+$navbar-default-bg: transparent;
 
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
@@ -8,6 +8,12 @@ html {
     font-size: 100%;
     text-align: center;
     font-family: 'cwTeXHei', serif;
+}
+
+body {
+    background-image:url('https://c2.staticflickr.com/6/5688/23880451172_4c22f4b9fe_c.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;    
 }
 
 table {
@@ -35,7 +41,7 @@ button, input, select, textarea {
 	text-transform: uppercase;
 	font-weight: normal;
 	font-size: 1.8em;
-	color: #5c5c5c;
+	color: #303938;
 }
 
 #logo.hover {
@@ -44,27 +50,31 @@ button, input, select, textarea {
 
 .jumbotron {
     background: transparent;
-    background-image:url('https://c2.staticflickr.com/6/5688/23880451172_4c22f4b9fe_c.jpg');
-    background-repeat:no-repeat;
-    background-size: 100%;    
 }
 
 .jumbotron h1 {
     letter-spacing: -2px;
-    text-shadow: #6C6C6C 0.1em 0.1em 0.1em;
+    text-shadow: #303938 0.1em 0.1em 0.1em;
     color: white;
 }
 
 .jumbotron p {
-    text-shadow: #E0E0E0 0.1em 0.1em 0.1em;
+    text-shadow: #303938 0.1em 0.1em 0.1em;
     color: white;
     margin-left: 5em;
     margin-right: 5em;
 }
 
-footer {
+footer p {
     margin-top: 45px;
     padding-top: 15px;
-    /*border-top: 1px solid #eaeaea;*/
+    color: #fff;
+}
 
+footer a:hover {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #303938;
 }
