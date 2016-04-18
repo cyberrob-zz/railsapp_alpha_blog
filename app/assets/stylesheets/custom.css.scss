@@ -6,14 +6,14 @@ $navbar-default-bg: transparent;
 @import "bootstrap";
 html {
     font-size: 100%;
-    text-align: center;
+    //text-align: center;
     font-family: 'cwTeXHei', serif;
 }
 
 body {
     background-image:url('https://c2.staticflickr.com/6/5688/23880451172_4c22f4b9fe_c.jpg');
     background-repeat:no-repeat;
-    background-size: cover;    
+    background-size: cover;
 }
 
 table {
@@ -77,4 +77,9 @@ footer a:hover {
 
 .navbar-default .navbar-nav li a {
     color: #303938;
+}
+
+.row {
+    padding-left: 10%;
+    padding-right: 10%;
 }
