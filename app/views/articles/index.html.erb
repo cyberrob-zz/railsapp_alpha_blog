@@ -1,29 +1,27 @@
-<h1>
-List All Articles
+<h1 align="center" class="all-article-heading">
+    All Articles
 </h1>
+
+<% if @articles.length < 0 %>
 <h3>
-or simply
-<%= link_to "Create new article", new_article_path  %>
+    <%= link_to "Write your first post!", new_article_path %>
 </h3>
-<br/>
-<br/>
-<br/>
-<% if @articles.length >
-0 %>
-<table>
-	<% @articles.each do |article| %>
-	<tr>
-		<td>
-			<h3><%= link_to article.title, article_path(article) %></h3>
-			<p>
-				<%= article.updated_at %>
-			</p>
-		</td>
-	</tr>
-	<% end %>
-</table>
+<% end %>
 <% else %>
-<h3>
-<%= link_to "Post your first post!", new_article_path %>
-</h3>
+<% @articles.reverse_each do |article| %>
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2">
+			<div class="well well-lg">
+				<div class="article-title">
+					<%= link_to article.title, article_path(article) %>
+				</div>
+				<div class="article-body">
+					<%= truncate(article.description, length: 100) %>
+				</div>
+				<div class="article-timestamp">
+					<%= article.updated_at %>
+				</div>
+			</div>
+		</div>
+	</div>
 <% end %>
