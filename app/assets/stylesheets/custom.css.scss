@@ -50,19 +50,14 @@ button, input, select, textarea {
 
 .jumbotron {
     background: transparent;
-}
-
-.jumbotron h1 {
-    letter-spacing: -2px;
-    text-shadow: #303938 0.1em 0.1em 0.1em;
-    color: white;
+    padding-top: 10px;
 }
 
 .jumbotron p {
     text-shadow: #303938 0.1em 0.1em 0.1em;
     color: white;
-    margin-left: 5em;
-    margin-right: 5em;
+    font-size: 1.1em;
+    margin-left: 10px;
 }
 
 .footer {
