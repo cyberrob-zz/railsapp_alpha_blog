@@ -1,24 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Post Content</title>
-	
-</head>
-<body>
-	<h2>
-		<%= @article.title %>
-	</h2>
-	<p>
-		<%= @article.description %>
-	</p>
+<h2 align="center"><%= @article.title %></h2>
 
-<br>
-<br>
-<br>
-	<%= link_to 'Edit Post', edit_article_path %> |
-	<%= link_to 'Delete Post', article_path, method: :delete, data: {confirm: "Are you sure?"} %> |
-	<%= link_to 'Create New Post', new_article_path %> |
-	<%= link_to 'All Posts', articles_path %>
-</body>
-</html>
+<div class="well col-xs-8 col-xs-offset-2">
+	<div class="description">
+		<h3>
+			<small><%= simple_format(@article.description) %></small>
+		</h3>
+	</div>
+
+	<div class="article-actions">
+		<%= link_to 'Edit Post', edit_article_path, class: "btn btn-xs btn-primary" %>
+		<%= link_to 'Delete Post', article_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger" %>
+		<%= link_to 'All Posts', articles_path, class: "btn btn-xs btn-success" %>
+	</div>
+</div>
